@@ -1,0 +1,9 @@
+.space {
+  background-color: purple;
+  height: 300px;
+  width: 300px;
+  overflow:scroll;
+  padding: 15px;
+  font-size: 35px;
+
+}

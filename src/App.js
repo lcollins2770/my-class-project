@@ -1,6 +1,10 @@
 import React, {Component} from 'react';
 import Signup from './authentication/Signup';
 import './App.css';
+import Navbar from './Navbar'
+import Router from './Router'
+
+
 
 class App extends Component{
       constructor (){
@@ -9,17 +13,19 @@ class App extends Component{
       this.nameChange = this.nameChange.bind(this)
     }
     nameChange (name){
-      console.log("the name change event is set up correctly")
       this.setState({name: name})
     }
 
   render(){
     return(
-      <div className = "App">
-        <div id="navbar">
-          Welcome to our Site {this.state.name}
+      <div className="App">
+          <Navbar/>
+          <Signup/>
+          <div id="app-container">
+              <div id="app-menu-container">Menu goes here</div>
+              <Router/>
           </div>
-      <Signup onSubmitSignup={this.nameChange}/>
+
       </div>
     );
   }

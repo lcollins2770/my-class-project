@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import './signup.css';
+
 
 class Signup extends Component {
   constructor (props) {
@@ -24,16 +26,16 @@ class Signup extends Component {
       }
       render() {
         return (
-          <form>
-            <label>Name</label>
-            <input type="text" onChange={this.handleNameChange}></input>
-            <button id="submitButton" onClick={this.handleSignupSubmit}>Submit</button>
+           <form>
+              <label>Name </label>
+              <input type="text" onChange={this.handleNameChange}></input>
+              <button id="submitButton" onClick={this.handleSignupSubmit}>Submit</button>
 
-            <label>Email</label>
-            <input type="text" onChange={this.handleEmailChange}></input>
-            <button id="submitButton" onClick={this.handleSignupSubmit}>Submit</button>
+              <label>Email </label>
+              <input type="text" onChange={this.handleEmailChange}></input>
+              <button id="submitButton" onClick={this.handleSignupSubmit}>Submit</button>
+            </form>
 
-          </form>
         );
       }
 }
